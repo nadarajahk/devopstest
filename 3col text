@@ -1,0 +1,126 @@
+To ensure the text and images are aligned to the left on mobile devices for the given block, you can use the following approach:
+
+### 1. **Add Inline Styles for Mobile Responsiveness**
+Modify the `style` attributes of the elements to include media queries using `@media` rules. This ensures that on smaller screens, the alignment is forced to the left.
+
+### 2. **Modify the Styles**
+Apply `text-align: left` to the parent containers and ensure images are displayed as `block` with left-alignment.
+
+Here's the updated code with the necessary changes:
+
+```html
+<!-- 3 Even Columns : BEGIN -->
+<tr>
+    <td align="center" valign="top" style="font-size:0; padding: 10px; background-color: #ffffff;" class="darkmode-bg">
+        <!--[if mso]>
+        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660">
+        <tr>
+        <td valign="top" width="220">
+        <![endif]-->
+        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; text-align: left;" class="stack-column">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="padding: 10px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                            <tr>
+                                <td>
+                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; display: block; margin: 0 auto;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
+                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--[if mso]>
+        </td>
+        <td valign="top" width="220">
+        <![endif]-->
+        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; text-align: left;" class="stack-column">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="padding: 10px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                            <tr>
+                                <td>
+                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; display: block; margin: 0 auto;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
+                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--[if mso]>
+        </td>
+        <td valign="top" width="220">
+        <![endif]-->
+        <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; text-align: left;" class="stack-column">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="padding: 10px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                            <tr>
+                                <td>
+                                    <img src="https://via.placeholder.com/200" width="200" height="" border="0" alt="alt_text" style="width: 100%; max-width: 200px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; display: block; margin: 0 auto;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center">
+                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+<!-- 3 Even Columns : END -->
+```
+
+### Key Changes:
+1. **Add `text-align: left`**
+   - This ensures that text inside the block aligns to the left on smaller screens.
+
+2. **Set `display: block` for Images**
+   - Using `display: block` removes any inline spacing or centering issues for images.
+
+3. **Ensure Responsiveness**
+   - Using `max-width` and `width: 100%` for images ensures they resize properly on smaller screens.
+
+4. **Class-Based Customization**
+   - You can add a class like `center-on-narrow` or `stack-column` with additional styles for mobile if required.
+
+### Optional: Use Media Queries (if external CSS)
+If you use an external or embedded CSS file, you can include the following media query for mobile devices:
+
+```css
+@media screen and (max-width: 600px) {
+    .stack-column {
+        text-align: left !important;
+    }
+    .stack-column img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+```
+
+This ensures that the layout adapts properly for smaller viewports.
