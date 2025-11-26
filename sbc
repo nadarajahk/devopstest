@@ -1,0 +1,67 @@
+<style>
+  /* Put this in your email <style> block */
+  @media only screen and (max-width:480px) {
+    .q-col {
+      display:block !important;
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .q-col table {
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .fullWidth {
+      width:100% !important;
+      max-width:100% !important;
+      height:auto !important;
+    }
+  }
+</style>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="fullWidth"
+  role="presentation" style="border-collapse:collapse; width:100%; max-width:600px; background-color:#ffffff;" width="100%">
+  <tr>
+    <td valign="top">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullWidth" role="presentation" style="border-collapse:collapse; width:100%;" width="100%">
+        <tr>
+          <td class="q-container" valign="top">
+
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:100%; max-width:600px; background-color:#ffffff;" width="100%" align="center">
+              <tr><td width="300" valign="top"><![endif]-->
+            <div class="q-col" style="display:inline-block; width:50%; max-width:300px; vertical-align:top;">
+              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; width:100%;">
+                <tr>
+                  <td align="left">
+                    <a href="https://click.website.rbc.com/..." target="_blank">
+                      <img alt="Get it all on the Avion Rewards app ..." border="0" class="fullWidth"
+                        src="https://image.website.rbc.com/lib/fe921570736c0c7b75/m/1/08e460c4-eecb-47c2-a7df-7935cd757ab8.png"
+                        style="display:block; width:100%; height:auto; max-width:300px;" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]></td><td width="300" valign="top"><![endif]-->
+
+            <div class="q-col" style="display:inline-block; width:50%; max-width:300px; vertical-align:top;">
+              <table align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; width:100%;">
+                <tr>
+                  <td align="right">
+                    <a href="https://click.website.rbc.com/..." target="_blank">
+                      <img alt="" border="0" class="fullWidth"
+                        src="https://image.website.rbc.com/lib/fe921570736c0c7b75/m/1/6e18cb4d-1b60-4919-aee5-79a864a9fb50.png"
+                        style="display:block; width:100%; height:auto; max-width:300px;" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
